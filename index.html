@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-CzuFGxf8.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C7o7V33c.css">
+  </head>
+  <body class="image-fill">
+
+    <div class="main-container">
+      <div
+        class="up-left-block rounded-container centered-text animated-shadow image-fill"
+      >
+        <img
+          src="/assets/cropped-avtr-CHQzbIxX.jpg"
+          alt="Reng At CBU Senior
+        Year! Circa 2022"
+        />
+      </div>
+      <div class="up-right-block rounded-container animated-shadow normal-text">
+        <h1>Greetings!</h1>
+        <p>I'm Milton Bull aka <b>".reng"</b></p>
+        <p>
+          I'm a Honors Engineering Computer Science BS & Scientific Math BS,
+          Data Science Developer, Simulation Designer, Visual Artist, and
+          science-based blogger!
+        </p>
+      </div>
+      <div
+        class="down-left-block rounded-container centered-text animated-shadow"
+        onclick="contactButton()"
+      >
+        <h1>Contact</h1>
+      </div>
+      <div
+        class="down-right-block rounded-container centered-text animated-shadow"
+        onclick="mailButton()"
+      >
+        <h1>Request a Portfolio!</h1>
+      </div>
+    </div>
+
+    <!-- Contact Container -->
+    <div class="contact-container hidden" id="contactContainer">
+      <div class="contact-block rounded-container normal-text">
+        <h1>Discord (1-20 Hours)</h1>
+        <p><b>.reng</b></p>
+      </div>
+
+      <div class="contact-block rounded-container normal-text">
+        <h1>Email (1-2 Days)</h1>
+        <p><b>cozybedroomdesigns@gmail.com</b></p>
+      </div>
+    </div>
+    <!-- Mail Form Container -->
+    <div class="mail-container hidden" id="mailFormContainer">
+      <div class="mail-block rounded-container centered-text">
+        <h1>See My Work!</h1>
+        <form
+          action="mailto:bedroomdesigns@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          Name:<br />
+          <input type="text" name="name" /><br /><br />
+          E-mail:<br />
+          <input type="text" name="mail" /><br /><br />
+          What type of work would you like to see? (Visual Design, Computer
+          Science, Academic, etc.):<br />
+          <input type="text" name="comment" size="50" /><br /><br />
+          <input type="submit" value="Send" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </div>
+    <!-- Hide Overlay -->
+    <div class="hide-overlay" onclick="hideAll()"></div>
+
+    <script>
+      function contactButton() {
+        console.log("bang!");
+        let contactContainer = document.getElementById("contactContainer");
+        contactContainer.classList.toggle("hidden");
+      }
+
+      function mailButton() {
+        console.log("bang!");
+        let mailFormContainer = document.getElementById("mailFormContainer");
+        mailFormContainer.classList.toggle("hidden");
+      }
+
+      function hideAll() {
+        let contactContainer = document.getElementById("contactContainer");
+        let mailFormContainer = document.getElementById("mailFormContainer");
+        if (!contactContainer.classList.contains("hidden")) {
+          contactContainer.classList.toggle("hidden");
+        }
+        if (!mailFormContainer.classList.contains("hidden")) {
+          mailFormContainer.classList.toggle("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>
