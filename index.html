@@ -2,20 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Public-Portfolio/assets/favicon-CGnqAYb5.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-CzuFGxf8.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C7o7V33c.css">
+    <title>Reng's Portfolio!</title>
+    <link rel="stylesheet" crossorigin href="/Public-Portfolio/assets/index-BcJ7MBYF.css">
   </head>
-  <body class="image-fill">
 
+  <body class="image-fill">
     <div class="main-container">
       <div
         class="up-left-block rounded-container centered-text animated-shadow image-fill"
       >
         <img
-          src="/assets/cropped-avtr-CHQzbIxX.jpg"
+          src="/Public-Portfolio/assets/cropped-avtr-CHQzbIxX.jpg"
           alt="Reng At CBU Senior
         Year! Circa 2022"
         />
@@ -27,6 +26,11 @@
           I'm a Honors Engineering Computer Science BS & Scientific Math BS,
           Data Science Developer, Simulation Designer, Visual Artist, and
           science-based blogger!
+        </p>
+        <p>
+          Here, you can request access to my projects, visual art, services, and
+          more. Even if it's just to join a game lobby. I'm always ready to
+          chat, so don't be shy!
         </p>
       </div>
       <div
@@ -77,19 +81,23 @@
       </div>
     </div>
     <!-- Hide Overlay -->
-    <div class="hide-overlay" onclick="hideAll()"></div>
+    <div class="hide-overlay hidden" id="hideOverlay" onclick="hideAll()"></div>
 
     <script>
       function contactButton() {
         console.log("bang!");
         let contactContainer = document.getElementById("contactContainer");
         contactContainer.classList.toggle("hidden");
+        let hideOverlay = document.getElementById("hideOverlay");
+        hideOverlay.classList.toggle("hidden");
       }
 
       function mailButton() {
         console.log("bang!");
         let mailFormContainer = document.getElementById("mailFormContainer");
         mailFormContainer.classList.toggle("hidden");
+        let hideOverlay = document.getElementById("hideOverlay");
+        hideOverlay.classList.toggle("hidden");
       }
 
       function hideAll() {
@@ -101,6 +109,8 @@
         if (!mailFormContainer.classList.contains("hidden")) {
           mailFormContainer.classList.toggle("hidden");
         }
+        let hideOverlay = document.getElementById("hideOverlay");
+        hideOverlay.classList.toggle("hidden");
       }
     </script>
   </body>
